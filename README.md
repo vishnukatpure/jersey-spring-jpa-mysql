@@ -1,0 +1,1 @@
+# jersey-spring-jpa-mysql
