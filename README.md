@@ -1,1 +1,6 @@
-# jersey-spring-jpa-mysql
+# its demo project using below technologies
+# Java 
+# Spring 
+# Spring JDBC 
+# Hibernate EntityManager
+# Mysql       
