@@ -24,7 +24,7 @@ public class UserRestResource {
 	@Autowired(required=true)
 	@Qualifier("userService")
 	private UserService userService;
-	
+	aaaaa
 	@GET
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
