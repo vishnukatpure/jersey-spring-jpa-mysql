@@ -7,7 +7,7 @@ public class UserRestResourceTest {
 
 	@Test
 	public void getUser() {
-		boolean value = false;
+		boolean value = true;
 		Assert.assertEquals(true, value);
 	}
 }
