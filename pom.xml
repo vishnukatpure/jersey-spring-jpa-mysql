@@ -5,6 +5,7 @@
 	<groupId>com.demo</groupId>
 	<artifactId>jersey-spring-jpa-mysql</artifactId>
 	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>jersey-spring-jpa-mysql</name>
 	<url>http://maven.apache.org</url>
 
