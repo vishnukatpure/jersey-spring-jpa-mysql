@@ -17,20 +17,13 @@ pipeline {
 
             //To run Maven on a Windows agent, use
             bat "mvn -Dmaven.test.failure.ignore=true clean package"
-         }
-
-         post {
-            // If Maven was able to run the tests, even if some of the test
-            // failed, record the test results and archive the jar file.
-            success {
-               junit '**/target/surefire-reports/TEST-*.xml'
-               archiveArtifacts 'target/*.war'
-            }
-         }
+         }        
       }
-      stage('deploy'){
-      	steps{
+      stage('Deploy'){
+      	steps {
+      		//Deploy to specific remote server using manager credentials
       		deploy adapters: [tomcat8(credentialsId: '77ff7c2b-7aec-4f42-bb4c-13b6b4e2378e', path: '', url: 'http://localhost:9999')], contextPath: 'jersey-spring-jpa-mysql', war: 'target/jersey-spring-jpa-mysql.war'   
       	}
       }
+   }
 }
