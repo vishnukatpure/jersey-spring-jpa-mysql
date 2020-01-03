@@ -7,30 +7,20 @@ pipeline {
    }
 
    stages {
-      stage('clone'){
+      stage('Clone'){
          steps {
             // Get some code from a GitHub repository
             git 'https://github.com/vishnukatpure/jersey-spring-jpa-mysql.git'
          }  
       }
-      
-      stage('Test'){
-         steps {
-            // Run Maven on a Unix agent.
-            //sh "mvn clean test"
-
-            //To run Maven on a Windows agent, use
-            bat "mvn clean test"
-         }  
-      }
-      
+            
       stage('Build') {
          steps {
             // Run Maven on a Unix agent.
             //sh "mvn -DskipTests clean package"
 
             //To run Maven on a Windows agent, use
-            bat "mvn -DskipTests clean package"
+            bat "mvn -Dmaven.test.failure.ignore=false clean package"
          }        
       }
       stage('Deploy'){
