@@ -20,7 +20,7 @@
 		<spring.framework.version>5.2.0.RELEASE</spring.framework.version>
 		<org.slf4j-version>1.7.5</org.slf4j-version>
 		<hibernate.version>4.3.5.Final</hibernate.version>
-		<mysql.version>8.0.11</mysql.version>
+		<mysql.version>8.0.28</mysql.version>
 		<jersey2.version>2.25</jersey2.version>
 		<jaxrs.version>2.0.1</jaxrs.version>
 	</properties>
